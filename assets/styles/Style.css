@@ -1,0 +1,214 @@
+@font-face {
+    font-family: sphinx-font;
+    src: url("../fonts/SassoonInfantStd.otf");
+  }
+  body {
+    font-family: sphinx-font;
+  }
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999;
+}
+#status {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../images/Preloader_2.gif");
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -50px 0 0 -50px;
+}
+
+
+#container{
+    position: absolute;
+    left:20px;
+    right:20px;
+    top:10px;
+    bottom:10px;
+
+}
+
+@media (max-width: 997px){
+    .All-Content{
+        transform: scale(0.90);
+    }
+}
+@media (max-width: 850px){
+    .All-Content{
+        transform: scale(0.85);
+    }
+}
+@media (max-width: 775px){
+    .All-Content{
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 675px){
+    .All-Content{
+        transform: scale(0.65);
+    }
+}
+@media (max-width: 575px){
+    .All-Content{
+        transform: scale(0.55);
+    }
+}
+@media (max-width: 475px){
+    .All-Content{
+        transform: scale(0.45);
+    }
+}
+@media (max-width: 380px){
+    .All-Content{
+        transform: scale(0.38);
+    }
+}
+@media (max-width: 300px){
+    .All-Content{
+        transform: scale(0.25);
+    }
+}
+
+
+.All-Content{
+    background-color: #0fa0c5;
+    width: 800px;
+    height: 600px;
+    transform-origin: top left;
+    transition: all 500ms ease-in-out;
+    position: relative;
+    margin: auto;
+}
+
+.Header-icon{
+    float: right;
+    transform: scale(.7);
+    cursor: pointer;
+}
+
+.question-body{
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid #f5821f;
+    width: 770px;
+    height: 540px;
+    margin: auto;
+    position: relative;
+    bottom: 5px;
+    
+    
+}
+
+.option {
+    margin: 13px;
+    padding: 5px 11px;
+    border: 3px solid #0fa0c5;
+    border-radius: 10.25px;
+    cursor: pointer;
+}
+
+.CorrectSign{
+    position: relative;
+    transform: translate(272%, -126%);
+    width: 30px;
+    display: none;
+}
+.WrongSign{
+    width:25px;
+    position: relative;
+    transform: translate(272%, -126%);
+    opacity: 1;
+    animation: blinker 0.5s;
+    animation-iteration-count: 4;
+    display: none;
+}
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+
+.Image-Solution {
+    width: 172px;
+}
+.solution-feild{
+    cursor: pointer;
+}
+
+.the-footer{
+    background-color: #deecf6;
+}
+
+.footerIcon{
+    width: 45px;
+    cursor: pointer;
+}
+
+#HelpPopUp{
+    background: rgba(207, 198, 198, 0.75) ;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    display: none;
+
+}
+#HelpPopUp:target{
+    display: block;
+}
+#HelpPopUp .help-content{
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid #f5821f;
+    width: 760px;
+    height: 500px;
+    position: relative;
+    margin: 70px auto;
+    bottom: 5px;
+}
+
+.Help-close{
+    padding: 5px;
+}
+.Help-close img{
+    width: 40px;
+}
+
+
+#resource-popUp{
+    background: rgba(0, 0, 0, 0.5) ;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    display: none;
+
+}
+#resource-popUp:target{
+    display: block;
+}
+
+#resource-popUp .resource-content{
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid #f5821f;
+    width: 760px;
+    height: 500px;
+    position: relative;
+    margin: 70px auto;
+    bottom: 5px;
+}
+
